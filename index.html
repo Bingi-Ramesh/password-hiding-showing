@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Show/Hide Password</title>
+  <title>Password Toggle</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <div class="card">
-    <h2>Password Visibility Toggle</h2>
+    <h2>Password Hiding/Showing</h2>
     <div class="input-box">
       <input type="password" placeholder="Enter your password" id="password" />
       <img 
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmVba5IO7cb6dEShqSmQg30K4_fPiV61RNYHJsnBbRh6aNkhZ_H2YfRAFAqXm_amZ6-A&usqp=CAU" 
+        src="https://cdn-icons-png.flaticon.com/512/159/159604.png" 
         alt="Toggle visibility" 
         id="eyeicon" 
       />
@@ -21,21 +21,19 @@
   </div>
 
   <script>
-    let eyeicon = document.getElementById("eyeicon");
-    let password = document.getElementById("password");
+    const eyeicon = document.getElementById("eyeicon");
+    const password = document.getElementById("password");
 
     eyeicon.onclick = function () {
       if (password.type === "password") {
         password.type = "text";
-        eyeicon.src =
-          "https://static.vecteezy.com/system/resources/thumbnails/021/889/365/small/password-hidding-icon-icon-for-data-privacy-and-sensitive-content-mark-illustration-vector.jpg";
+        eyeicon.src = "https://cdn-icons-png.flaticon.com/512/159/159605.png";
       } else {
         password.type = "password";
-        eyeicon.src =
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmVba5IO7cb6dEShqSmQg30K4_fPiV61RNYHJsnBbRh6aNkhZ_H2YfRAFAqXm_amZ6-A&usqp=CAU";
+        eyeicon.src = "https://cdn-icons-png.flaticon.com/512/159/159604.png";
       }
     };
   </script>
-  
+
 </body>
 </html>
